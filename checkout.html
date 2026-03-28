@@ -1,0 +1,97 @@
+<!--Raheem Russell-->
+<!--2104577-->
+<!--IA 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-EURO | Checkout</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">R-<span>EURO</span></a>
+            <button class="menu-btn" id="menu-btn" aria-label="Open navigation">☰</button>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart <span id="cart-count" class="count-badge">0</span></a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Checkout</h1>
+                    <p>Confirm your order and enter your shipping details.</p>
+                </div>
+
+                <div class="checkout-layout">
+                    <div class="form-box checkout-form-box">
+                        <form id="checkout-form" novalidate>
+                            <div class="form-group">
+                                <label for="ship-name">Full Name</label>
+                                <input type="text" id="ship-name" name="ship-name" placeholder="Enter your full name">
+                                <small class="error-text" id="ship-name-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ship-address">Address</label>
+                                <textarea id="ship-address" name="ship-address" rows="4" placeholder="Enter your shipping address"></textarea>
+                                <small class="error-text" id="ship-address-error"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="amount-paid">Amount Being Paid</label>
+                                <input type="number" id="amount-paid" name="amount-paid" step="0.01" min="0" placeholder="Enter amount being paid">
+                                <small class="error-text" id="amount-paid-error"></small>
+                            </div>
+
+                            <div class="checkout-buttons">
+                                <button type="button" id="confirm-btn" class="btn primary-btn">Confirm</button>
+                                <button type="button" id="cancel-btn" class="btn secondary-btn">Cancel</button>
+                                <button type="button" id="checkout-clear-btn" class="btn secondary-btn">Clear All</button>
+                                <button type="submit" class="btn primary-btn">Check Out</button>
+                                <button type="button" id="close-btn" class="btn secondary-btn">Close</button>
+                            </div>
+
+                            <p class="success-text" id="checkout-message"></p>
+                        </form>
+                    </div>
+
+                    <aside class="summary-box">
+                        <h2>Order Summary</h2>
+                        <div id="checkout-items"></div>
+                        <div class="summary-row">
+                            <span>Sub-total</span>
+                            <span id="checkout-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Discount</span>
+                            <span id="checkout-discount">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span id="checkout-tax">$0.00</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total Cost</span>
+                            <span id="checkout-total">$0.00</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

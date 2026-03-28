@@ -1,0 +1,61 @@
+<!--Raheem Russell-->
+<!--2104577-->
+<!--IA 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-EURO | Login</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">R-<span>EURO</span></a>
+            <button class="menu-btn" id="menu-btn" aria-label="Open navigation">☰</button>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart <span id="cart-count" class="count-badge">0</span></a>
+                <a href="login.html" class="active">Login</a>
+                <a href="register.html">Register</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="form-section">
+            <div class="container">
+                <div class="form-box">
+                    <h1>Login</h1>
+                    <p>Sign in to continue shopping with R-EURO.</p>
+
+                    <form id="login-form" novalidate>
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" name="login-username" placeholder="Enter your username">
+                            <small class="error-text" id="login-username-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="login-password" placeholder="Enter your password">
+                            <small class="error-text" id="login-password-error"></small>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn full-btn">Login</button>
+                        <p class="success-text" id="login-message"></p>
+                    </form>
+
+                    <p class="form-link">No account yet? <a href="register.html">Register here</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

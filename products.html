@@ -1,0 +1,55 @@
+<!--Raheem Russell-->
+<!--2104577-->
+<!--IA 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-EURO | Products</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">R-<span>EURO</span></a>
+            <button class="menu-btn" id="menu-btn" aria-label="Open navigation">☰</button>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="cart.html">Cart <span id="cart-count" class="count-badge">0</span></a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Our Products</h1>
+                    <p>Custom exhausts, disc rotors and intake manifolds for German sport cars.</p>
+                </div>
+
+                <div class="filter-bar">
+                    <label for="brand-filter">Filter by Brand</label>
+                    <select id="brand-filter">
+                        <option value="all">All Brands</option>
+                        <option value="bmw">BMW</option>
+                        <option value="benz">Mercedes-Benz</option>
+                        <option value="vw">Volkswagen</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+
+                <div class="card-grid product-grid" id="product-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
