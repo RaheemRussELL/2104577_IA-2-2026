@@ -1,0 +1,85 @@
+<!--Raheem Russell-->
+<!--2104577-->
+<!--IA 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-EURO | Register</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">R-<span>EURO</span></a>
+            <button class="menu-btn" id="menu-btn" aria-label="Open navigation">☰</button>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart <span id="cart-count" class="count-badge">0</span></a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="active">Register</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="form-section">
+            <div class="container">
+                <div class="form-box">
+                    <h1>Register</h1>
+                    <p>Create your account to shop performance parts online.</p>
+
+                    <form id="register-form" novalidate>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+                            <small class="error-text" id="full-name-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob">
+                            <small class="error-text" id="dob-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                            <small class="error-text" id="email-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-username">Username</label>
+                            <input type="text" id="reg-username" name="reg-username" placeholder="Choose a username">
+                            <small class="error-text" id="reg-username-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-password">Password</label>
+                            <input type="password" id="reg-password" name="reg-password" placeholder="Create a password">
+                            <small class="error-text" id="reg-password-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+                            <small class="error-text" id="confirm-password-error"></small>
+                        </div>
+
+                        <button type="submit" class="btn primary-btn full-btn">Register</button>
+                        <p class="success-text" id="register-message"></p>
+                    </form>
+
+                    <p class="form-link">Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
